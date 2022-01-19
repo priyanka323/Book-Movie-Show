@@ -1,0 +1,18 @@
+Book My Show
+
+-> We need a reusable crousal
+-> common crousal
+-> cast and crew small carousal
+
+Pages
+-> Home Pages
+-> Movie Pages
+-> Category Pages
+-> Razorpay payment
+
+Building
+-> Layouts
+-> Routes  --certain pages interface
+-> Pages
+-> Components
+
