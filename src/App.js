@@ -1,7 +1,7 @@
 import React from 'react';
 //import './logo.svg'
 //import './App.css';
-import {Route, Routes} from "react-router-dom";
+import { Route } from "react-router-dom";
 
 
 
@@ -15,18 +15,17 @@ import Temp from './components/temp';
 function App() {
   return (
     <>
-
-      
-        <Route path="/" exact component={<Temp/>}/>
-        
-      
+      <DefaultHOC path="/" exact component={Temp} />
     </>
-
-    
   );
 }
 
+// / , /movie
+
 export default App;
+
+// temp.js-> default layout -> DeafaultHOC -> App.js -> Index.js
+//inner->outer
 
 //function Name1() {
 //  return <h1>Hello Root</h1>
