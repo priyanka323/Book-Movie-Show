@@ -1,7 +1,7 @@
 import React from 'react';
 //import './logo.svg'
 //import './App.css';
-import { Route } from "react-router-dom";
+//import { Route } from "react-router-dom";
 
 
 
@@ -9,13 +9,13 @@ import { Route } from "react-router-dom";
 import DefaultHOC from "./HOC/Default.HOC";
 
 //components
-import Temp from './components/temp';
-
+//import Temp from './components/temp';
+import HomePage from './pages/Home.page';
 
 function App() {
   return (
     <>
-      <DefaultHOC path="/" exact component={Temp} />
+      <DefaultHOC path="/" exact component={HomePage} />
     </>
   );
 }
