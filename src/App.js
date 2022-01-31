@@ -7,15 +7,18 @@ import React from 'react';
 
 //HOC
 import DefaultHOC from "./HOC/Default.HOC";
+import MovieHOC from './HOC/Movie.HOC';
 
 //components
 //import Temp from './components/temp';
 import HomePage from './pages/Home.page';
+import Movie from './pages/Movie.page';
 
 function App() {
   return (
     <>
       <DefaultHOC path="/" exact component={HomePage} />
+      <MovieHOC path="/movies/:id" exact component={Movie} />
     </>
   );
 }
