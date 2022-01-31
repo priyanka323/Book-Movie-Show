@@ -5,7 +5,7 @@ const Poster = (props) => {
         <>
           <div className="px-4">
               <div className="h-80">
-                <img src={props.src} className="w-full h-full rounded-xl"/>
+                <img src={`https://image.tmdb.org/t/p/original${props.poster_path}`} className="w-full h-full rounded-xl"/>
               </div>
 
               <h3
@@ -13,7 +13,7 @@ const Poster = (props) => {
                   props.isDark ? "text-white" : "text-gray-800"
               }`}
               >
-                {props.title}
+                {props.original_title}
               </h3>
 
               <p
@@ -21,7 +21,7 @@ const Poster = (props) => {
                   props.isDark ? "text-white" : "text-gray-700"
               }`}
               >
-                {props.subtitle}
+                {props.original_language}
               </p>
           </div>
         </>

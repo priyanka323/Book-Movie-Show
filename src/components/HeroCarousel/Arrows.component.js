@@ -13,7 +13,7 @@ export const NextArrow = (props) => {
     );
 };
 
-export const PreArrow = (props) => {
+export const PrevArrow = (props) => {
     return (
         <>
             <div {...props} />

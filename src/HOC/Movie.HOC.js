@@ -2,7 +2,7 @@ import React from "react";
 import { Route } from "react-router-dom";
 
 //Layouts
-import Movie from "../pages/Movie.page";
+import MovieLayout from "../pages/Movie.page";
 
 const MovieHOC = ({ component: Component , ...rest }) => {
   return (
