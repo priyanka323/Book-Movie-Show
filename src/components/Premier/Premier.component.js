@@ -4,7 +4,7 @@ import Slider from "react-slick";
 //import Poster from "../Poster/poster.component";
 import Poster from "../Poster/Poster.component";
 
-const Premier = () => {
+const Premier = (props) => {
   const settings = {
     infinity: true,
     slidesToShow: 5,
@@ -13,56 +13,7 @@ const Premier = () => {
     InitialSlide: 0
   };
 
-const PremierImages = [
-  {
-    src: "https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@premiere-icon.png,ox-322,oy-20/et00119705-kcrkvlamee-portrait.jpg",
-    alt: "Premier Image",
-    title: "Dune",
-    subtitile: "English"
-  },
-  {
-    src: "https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@premiere-icon.png,ox-322,oy-20/et00119705-kcrkvlamee-portrait.jpg",
-    alt: "Premier Image",
-    title: "Dune",
-    subtitile: "English"
-  },
-  {
-    src: "https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@premiere-icon.png,ox-322,oy-20/et00119705-kcrkvlamee-portrait.jpg",
-    alt: "Premier Image",
-    title: "Dune",
-    subtitile: "English"
-  },
-  {
-    src: "https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@premiere-icon.png,ox-322,oy-20/et00119705-kcrkvlamee-portrait.jpg",
-    alt: "Premier Image",
-    title: "Dune",
-    subtitile: "English"
-  },
-  {
-    src: "https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@premiere-icon.png,ox-322,oy-20/et00119705-kcrkvlamee-portrait.jpg",
-    alt: "Premier Image",
-    title: "Dune",
-    subtitile: "English"
-  },
-  {
-    src: "https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@premiere-icon.png,ox-322,oy-20/et00119705-kcrkvlamee-portrait.jpg",
-    alt: "Premier Image",
-    title: "Dune",
-    subtitile: "English"
-  },
-  {
-    src: "https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@premiere-icon.png,ox-322,oy-20/et00119705-kcrkvlamee-portrait.jpg",
-    alt: "Premier Image",
-    title: "Dune",
-    subtitile: "English"
-  },
-  {
-    src: "https://in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:oi-discovery-catalog@@icons@@premiere-icon.png,ox-322,oy-20/et00119705-kcrkvlamee-portrait.jpg",
-    alt: "Premier Image",
-    title: "Dune",
-    subtitile: "English"
-  }
-]
+
 
   return (
       <>
@@ -71,7 +22,7 @@ const PremierImages = [
         <p className="text-white text-sm">Brand New releases every friday</p>
       </div>
         <Slider {...settings} >
-        {PremierImages.map((image)=> (
+        {props.PremierImages.map((image)=> (
           <Poster {...image} isDark/>
         ))}
         </Slider>

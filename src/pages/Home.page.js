@@ -17,7 +17,7 @@ const HomePage = () => {
         
     },[]);
     console.log({popularMovies});
-    return (
+return (
         
         <>
         <div className="flex flex-col gap-9">
@@ -39,7 +39,7 @@ const HomePage = () => {
                 </div>
 
                 <div className="mx-auto px-32 container">
-                    <Premier />
+                    <Premier PremierImages={popularMovies}/>
                 </div>
             </div>
 
