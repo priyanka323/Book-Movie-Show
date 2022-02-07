@@ -1,7 +1,13 @@
 import React from "react";
 
-function Temp() {
-    return <h1>Hello I am temp component</h1>
+const Temp = () => {
+    return (
+        <>
+            <div>
+                This is temp component
+            </div>
+        </>
+    );
 }
 
 export default Temp;

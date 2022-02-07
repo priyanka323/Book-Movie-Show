@@ -9,7 +9,7 @@ import {PrevArrow, NextArrow} from "./Arrows.component";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const HeroCarousal = () => {
+const HeroCarousel = () => {
   const [images, setImages] = useState([]);
 
   useEffect(()=> {
@@ -45,4 +45,4 @@ const HeroCarousal = () => {
   );
 };
 
-export default HeroCarousal;
+export default HeroCarousel;

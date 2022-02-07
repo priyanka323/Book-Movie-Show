@@ -6,7 +6,7 @@ import HeroCarousel from "../components/HeroCarousel/HeroCarousel.component.js"
 
 const DefaultLayout = (props) => {
   return (
-    <div>
+    <div className="container">
       <Navbar />
       <HeroCarousel />
       {props.children}

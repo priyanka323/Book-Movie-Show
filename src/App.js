@@ -1,6 +1,4 @@
 import React from 'react';
-//import './logo.svg'
-//import './App.css';
 import { Route } from "react-router-dom";
 
 
