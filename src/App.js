@@ -1,42 +1,35 @@
-import React from 'react';
+import React from "react";
 import { Route } from "react-router-dom";
 
+//axios
+import axios from "axios";
 
-import axios from 'axios';
 //HOC
 import DefaultHOC from "./HOC/Default.HOC";
-import MovieHOC from './HOC/Movie.HOC';
+import MovieHOC from "./HOC/Movie.HOC";
 
-//components
-//import Temp from './components/temp';
-import HomePage from './pages/Home.page';
-import Movie from './pages/Movie.page';
+//Pages
+import HomePage from "./pages/Home.page";
+import Movie from "./pages/Movie.page";
+import Plays from "./pages/Plays.page";
 
-//axios default setting
+// Import css files
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css"
+
+//axios default settings
 axios.defaults.baseURL = "https://api.themoviedb.org/3";
 axios.defaults.params = {};
-axios.defaults.params["api_key"]=process.env.REACT_APP_API_KEY;
+axios.defaults.params["api_key"] = process.env.REACT_APP_API_KEY;
 
 function App() {
   return (
     <>
-      <DefaultHOC path="/" exact component={HomePage} />
-      <MovieHOC path="/movies/:id" exact component={Movie} />
+     <DefaultHOC path="/" exact component={HomePage} />
+     <MovieHOC path="/movie/:id" exact component={Movie} />
+     <DefaultHOC path="/plays" exact component={Plays} />
     </>
   );
 }
-
 // / , /movie
-
 export default App;
-
-// temp.js-> default layout -> DeafaultHOC -> App.js -> Index.js
-//inner->outer
-
-//function Name1() {
-//  return <h1>Hello Root</h1>
-//}
-
-//function Name2() {
-//  return <h1>Hello Movie</h1>
-//}

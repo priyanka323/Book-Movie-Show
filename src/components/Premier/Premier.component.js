@@ -4,14 +4,15 @@ import Slider from "react-slick";
 //import Poster from "../Poster/poster.component";
 import Poster from "../Poster/Poster.component";
 
-const Premier = (props) => {
-  const settings = {
-    infinity: true,
-    slidesToShow: 5,
-    slidesToScroll: 2,
-    autoplay: false,
-    InitialSlide: 0
-  };
+
+//config
+import settings from "../../config/PosterCarousal.config";
+
+//images
+import PremierImages from "../../config/TempPosters.config";
+
+export const Premier = (props) => {
+  
 
 
 

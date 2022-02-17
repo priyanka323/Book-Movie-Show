@@ -1,4 +1,3 @@
-
 import React from "react";
 import Slider from "react-slick";
 
@@ -11,13 +10,13 @@ const EntertainmentCard = (props) => {
             src={props.src}
             alt="Entertainment Card"
           />
-          {props.children}
+          
         </div>
       </>
   );
 };
 
-const EntertainmentCardSlider = (props) => {
+const EntertainmentCardSlider = () => {
   const EntertainmentImage = [
     "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTMwKyBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/workshops-collection-202007231330.png",
     "https://in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MTAgRXZlbnRz,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300/fitness-collection-2020081150.png",
@@ -43,7 +42,7 @@ const EntertainmentCardSlider = (props) => {
         <EntertainmentCard src={image} />
       ))}
       </Slider>
-      {props.children}
+     
     
     </>
   )
